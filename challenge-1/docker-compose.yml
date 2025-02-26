@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  ssti-challenge:
+    build: .
+    ports:
+      - "5000:5000"
+    restart: always
+    environment:
+      - FLAG
+    container_name: ssti-challenge
